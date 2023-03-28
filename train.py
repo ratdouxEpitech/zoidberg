@@ -3,6 +3,7 @@ import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from keras.optimizers import Adam
 import tensorflow as tf
 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
@@ -17,11 +18,12 @@ train_data_dir = "chest_Xray\\train"
 validation_data_dir = "chest_Xray\\val"
 test_data_dir = "chest_Xray\\test"
 
-img_height = 512
-img_width = 512
+img_height = 256
+img_width = 256
 num_channels = 3  # Set to 1 for grayscale images
 batch_size = 32
-num_epochs = 5
+num_epochs = 20
+learning_rate = 0.001
 
 train_datagen = ImageDataGenerator(
     rescale=1./255,
@@ -48,7 +50,8 @@ model = Sequential([
     Dense(1, activation='sigmoid')
 ])
 
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+optimizer = Adam(learning_rate=learning_rate)
+model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy'])
 
 # Compile the model
 
@@ -88,7 +91,7 @@ print(f"Test loss: {test_loss:.4f}, Test accuracy: {test_accuracy:.4f}")
 save_model_prompt = input("Do you want to save the trained model? (y/n): ").strip().lower()
 
 if save_model_prompt == "y":
-    model.save("cxm-bsize{}-{}x{}-e{}.h5".format(batch_size, img_height, img_width, num_epochs))
+    model.save("cxm-bsize{}-{}x{}-e{}-lr{}.h5".format(batch_size, img_height, img_width, num_epochs, learning_rate))
     
     print("Model saved as chest_xray_model.h5")
 else:

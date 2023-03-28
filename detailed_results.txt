@@ -1,17 +1,35 @@
-Model: cxm-bsize32-512x512-e5.h5
+Model: cxm-bsize32-256x256-e20-lr0.001.h5
 
 Results:
 Total Images: 624
-  Tcorrect: 491 (78.69%)
-  Tincorrect: 133
+  Tcorrect: 552 (88.46%)
+  Tincorrect: 72
 Normal:
-  Ncorrect: 120 (51.28%)
-  Nincorrect: 114
+  Ncorrect: 199 (85.04%)
+  Nincorrect: 35
   Nimages: 234
 
 Pneumonia:
-  Pcorrect: 371 (95.13%)
-  Pincorrect: 19
+  Pcorrect: 353 (90.51%)
+  Pincorrect: 37
+  Pimages: 390
+
+================================================================================
+
+Model: cxm-bsize32-256x256-e5-lr0.001.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 495 (79.33%)
+  Tincorrect: 129
+Normal:
+  Ncorrect: 141 (60.26%)
+  Nincorrect: 93
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 354 (90.77%)
+  Pincorrect: 36
   Pimages: 390
 
 ================================================================================
@@ -19,10 +37,13 @@ Pneumonia:
 Rankings:
 
 By Total Correct Hits:
-1. cxm-bsize32-512x512-e5.h5 - 491 (78.69%)
+1. cxm-bsize32-256x256-e20-lr0.001.h5 - 552 (88.46%)
+2. cxm-bsize32-256x256-e5-lr0.001.h5 - 495 (79.33%)
 
 By Normal Correct Percentage:
-1. cxm-bsize32-512x512-e5.h5 - 120 (51.28%)
+1. cxm-bsize32-256x256-e20-lr0.001.h5 - 199 (85.04%)
+2. cxm-bsize32-256x256-e5-lr0.001.h5 - 141 (60.26%)
 
 By Pneumonia Correct Percentage:
-1. cxm-bsize32-512x512-e5.h5 - 371 (95.13%)
+1. cxm-bsize32-256x256-e5-lr0.001.h5 - 354 (90.77%)
+2. cxm-bsize32-256x256-e20-lr0.001.h5 - 353 (90.51%)

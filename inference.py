@@ -16,8 +16,8 @@ def main():
     normal_folder = "chest_Xray\\test\\NORMAL"
     pneumonia_folder = "chest_Xray\\test\\PNEUMONIA"
     models_folder = r"models"
-    img_height = 512
-    img_width = 512
+    img_height = 256
+    img_width = 256
 
     model_results = []
 
