@@ -29,3 +29,5 @@ change these values in train.py to match your need
   num_epochs = 5
 ``` 
 After training is done, run inference.py, which will output a textfile with the results
+
+inference.py will run inference on all images in the test folder for each model inside /model and output a detailed_results text file in the root folder
