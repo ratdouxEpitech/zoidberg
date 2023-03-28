@@ -1,0 +1,28 @@
+Model: cxm-bsize32-512x512-e5.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 491 (78.69%)
+  Tincorrect: 133
+Normal:
+  Ncorrect: 120 (51.28%)
+  Nincorrect: 114
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 371 (95.13%)
+  Pincorrect: 19
+  Pimages: 390
+
+================================================================================
+
+Rankings:
+
+By Total Correct Hits:
+1. cxm-bsize32-512x512-e5.h5 - 491 (78.69%)
+
+By Normal Correct Percentage:
+1. cxm-bsize32-512x512-e5.h5 - 120 (51.28%)
+
+By Pneumonia Correct Percentage:
+1. cxm-bsize32-512x512-e5.h5 - 371 (95.13%)

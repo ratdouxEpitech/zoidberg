@@ -1,0 +1,175 @@
+Model: chest_xray_model-2-augment.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 508 (81.41%)
+  Tincorrect: 116
+Normal:
+  Ncorrect: 154 (65.81%)
+  Nincorrect: 80
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 354 (90.77%)
+  Pincorrect: 36
+  Pimages: 390
+
+================================================================================
+
+Model: chest_xray_model-2.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 476 (76.28%)
+  Tincorrect: 148
+Normal:
+  Ncorrect: 94 (40.17%)
+  Nincorrect: 140
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 382 (97.95%)
+  Pincorrect: 8
+  Pimages: 390
+
+================================================================================
+
+Model: chest_xray_model-20-augment.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 538 (86.22%)
+  Tincorrect: 86
+Normal:
+  Ncorrect: 159 (67.95%)
+  Nincorrect: 75
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 379 (97.18%)
+  Pincorrect: 11
+  Pimages: 390
+
+================================================================================
+
+Model: chest_xray_model-20.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 463 (74.20%)
+  Tincorrect: 161
+Normal:
+  Ncorrect: 75 (32.05%)
+  Nincorrect: 159
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 388 (99.49%)
+  Pincorrect: 2
+  Pimages: 390
+
+================================================================================
+
+Model: chest_xray_model-5-augment.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 501 (80.29%)
+  Tincorrect: 123
+Normal:
+  Ncorrect: 123 (52.56%)
+  Nincorrect: 111
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 378 (96.92%)
+  Pincorrect: 12
+  Pimages: 390
+
+================================================================================
+
+Model: chest_xray_model-5.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 453 (72.60%)
+  Tincorrect: 171
+Normal:
+  Ncorrect: 66 (28.21%)
+  Nincorrect: 168
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 387 (99.23%)
+  Pincorrect: 3
+  Pimages: 390
+
+================================================================================
+
+Model: chest_xray_model-50-augment.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 542 (86.86%)
+  Tincorrect: 82
+Normal:
+  Ncorrect: 155 (66.24%)
+  Nincorrect: 79
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 387 (99.23%)
+  Pincorrect: 3
+  Pimages: 390
+
+================================================================================
+
+Model: chest_xray_model-50.h5
+
+Results:
+Total Images: 624
+  Tcorrect: 456 (73.08%)
+  Tincorrect: 168
+Normal:
+  Ncorrect: 68 (29.06%)
+  Nincorrect: 166
+  Nimages: 234
+
+Pneumonia:
+  Pcorrect: 388 (99.49%)
+  Pincorrect: 2
+  Pimages: 390
+
+================================================================================
+
+Rankings:
+
+By Total Correct Hits:
+1. chest_xray_model-50-augment.h5 - 542 (86.86%)
+2. chest_xray_model-20-augment.h5 - 538 (86.22%)
+3. chest_xray_model-2-augment.h5 - 508 (81.41%)
+4. chest_xray_model-5-augment.h5 - 501 (80.29%)
+5. chest_xray_model-2.h5 - 476 (76.28%)
+6. chest_xray_model-20.h5 - 463 (74.20%)
+7. chest_xray_model-50.h5 - 456 (73.08%)
+8. chest_xray_model-5.h5 - 453 (72.60%)
+
+By Normal Correct Percentage:
+1. chest_xray_model-20-augment.h5 - 159 (67.95%)
+2. chest_xray_model-50-augment.h5 - 155 (66.24%)
+3. chest_xray_model-2-augment.h5 - 154 (65.81%)
+4. chest_xray_model-5-augment.h5 - 123 (52.56%)
+5. chest_xray_model-2.h5 - 94 (40.17%)
+6. chest_xray_model-20.h5 - 75 (32.05%)
+7. chest_xray_model-50.h5 - 68 (29.06%)
+8. chest_xray_model-5.h5 - 66 (28.21%)
+
+By Pneumonia Correct Percentage:
+1. chest_xray_model-20.h5 - 388 (99.49%)
+2. chest_xray_model-50.h5 - 388 (99.49%)
+3. chest_xray_model-5.h5 - 387 (99.23%)
+4. chest_xray_model-50-augment.h5 - 387 (99.23%)
+5. chest_xray_model-2.h5 - 382 (97.95%)
+6. chest_xray_model-20-augment.h5 - 379 (97.18%)
+7. chest_xray_model-5-augment.h5 - 378 (96.92%)
+8. chest_xray_model-2-augment.h5 - 354 (90.77%)
